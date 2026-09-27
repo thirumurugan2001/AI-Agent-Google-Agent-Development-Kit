@@ -1,4 +1,5 @@
 from google.adk.agents import LlmAgent
+from google.adk.tools import google_search
 
 finance_ai_agent = LlmAgent(
     name="finance_assistance_agent",
@@ -13,6 +14,7 @@ finance_ai_agent = LlmAgent(
         If current market data is required, use an appropriate
         data-retrieval tool rather than making up information.
     """,
+    tools=[google_search],
 )
 
 root_agent = finance_ai_agent
