@@ -3,7 +3,7 @@ from google.adk.tools import google_search
 
 finance_ai_agent = LlmAgent(
     name="finance_assistance_agent",
-    model="gemini-3.5-flash-lite",
+    model="gemini-flash-latest",
     description="A financial analysis assistant that can analyze financial data and provide insights.",
     instruction="""
         You are a financial analysis assistant.
@@ -18,3 +18,4 @@ finance_ai_agent = LlmAgent(
 )
 
 root_agent = finance_ai_agent
+# Thiru Keerthana
